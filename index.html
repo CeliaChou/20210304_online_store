@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《王者世界 Online》 網路商城</title>
+    <meta property="og:description" content="《王者世界 Online》 網路商城" />
+    <meta property="og:title" content="《王者世界 Online》 網路商城" />
+    <meta property="og:type" content="article" />
+    <!-- <meta property="og:url" content="https://54.digeam.com/intro/20200923/" /> -->
+    <meta property="og:site_name" content="《王者世界 Online》 網路商城 - ato.digeam.com" />
+    <meta property="og:locale" content="zh_tw" />
+    <meta property="article:author" content="https://www.facebook.com/DigeamAtlantica" />
+    <!-- <meta property="og:image" content="https://54.digeam.com/intro/20200923/image/fb_share.jpg" /> -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta name="author" content="DiGeam" />
+    <meta name="keywords" content="Digeam 掘夢網,Digeam,掘夢網," />
+    <meta name="Resource-type" content="Document" />
+    <link rel="icon" href="../img/favicon.ico" sizes="16x16">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="no-webp">
+    <div class="wrap">
+        <!-- ----pop---- -->
+        <div class="popbox" id="pop1">
+            <div class="blacklayer"></div>
+            <div class="popclose"></div>
+            <div class="popbg">
+                <div class="pop_content_box">
+                    <div class="pop_title">確認是否購買</div>
+                    <div class="pop_title_line"></div>
+                    <div class="pop_content">
+                        <p>道具名稱道具名稱道具名稱</p>
+                        <p>25個</p>
+                        <p class="price_border">共計:1000點</p>
+                        <h5>消費前請詳閱商品說明，完成交易後將無法退換商品，請謹慎評估考慮。</h5>
+                    </div>
+                    <div class="pop_Btn pop_Btn1 already_buy" data-pop="pop2">直接購買</div>
+                </div>
+            </div>
+        </div>
+        <div class="popbox" id="pop2">
+            <div class="blacklayer"></div>
+            <div class="popclose close2"></div>
+            <div class="popbg2">
+                <div class="pop_content_box2">
+                    <div class="pop2_content">購買完成，謝謝</div>
+                    <div class="pop_Btn2 already_buy" id="pop2">確認</div>
+                </div>
+            </div>
+        </div>
+        <div class="popbox" id="pop3">
+            <div class="blacklayer"></div>
+            <div class="popclose"></div>
+            <div class="popbg">
+                <div class="pop_content_box">
+                    <div class="pop_title">商品道具說明</div>
+                    <div class="pop_content3">
+                        <div class="pop_commodity">
+                            <div class="pop_commodity_line"></div>
+                        </div>
+                        <p>道具說明道具說明道具說明道具說明道具說明道具說明</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner single-item">
+            <button type="button" class="slick-prev">Next</button>
+            <div class="banner">
+                <picture>
+                    <source srcset="imgp/pic1.webp" type="imgp/webp">
+                    <img src="img/testbanner.png">
+                </picture>
+            </div>
+            <div class="banner">
+                <picture>
+                    <source srcset="imgp/pic1.webp" type="imgp/webp">
+                    <img src="img/testbanner.png">
+                </picture>
+            </div>
+            <div class="banner">
+                <picture>
+                    <source srcset="imgp/pic1.webp" type="imgp/webp">
+                    <img src="img/testbanner.png">
+                </picture>
+            </div>
+            <div class="banner">
+                <picture>
+                    <source srcset="imgp/pic1.webp" type="imgp/webp">
+                    <img src="img/testbanner.png">
+                </picture>
+            </div>
+            <button type="button" class="slick-next">Next</button>
+        </div>
+        <div class="menu_1">
+            <div class="menu_1_L">
+                <p>持有點數:<span>10000</span></p>
+                <div class="search_box">
+                    <div class="search_W"></div>
+                    <input type="text" placeholder="搜尋商品" class="search_T">
+                </div>
+            </div>
+            <div class="menu_1_tab tab-group">
+                <li class="menu_1_li tab is-active">商品列表</li>
+                <li class="menu_1_li tab">購物車</li>
+                <li class="menu_1_li tab">購買紀錄</li>
+                <li class="menu_1_li tab">使用說明</li>
+                <a target="_blank" href="#" class="menu_1_li">禮物中心</a>
+                <a target="_blank" href="#" class="menu_1_li">點數儲值</a>
+            </div>
+        </div>
+        <!-- ----p1---- -->
+        <div class="panel-group">
+            <div class="panel is-show">
+                <div class="menu_2">
+                    <ul class="tabs-nav nav1">
+                        <li><a href="#tab-1">商品列表</a></li>
+                        <li><a href="#tab-2">寶箱</a></li>
+                        <li><a href="#tab-3">傭兵</a></li>
+                        <li><a href="#tab-4">消耗品</a></li>
+                        <li><a href="#tab-5">禮包</a></li>
+                        <li><a href="#tab-6">優惠商品</a></li>
+                        <div class="nav_small_box">
+                            <div class="nav_small_box_content">
+                                <div class="nav_small">
+                                    <ul class="tabs-nav2 nav2">
+                                        <li><a href="#tab-1">推薦商品</a></li>
+                                        <li><a href="#tab-1">全新商品</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_small">
+                                    <ul class="tabs-nav2 nav2">
+                                        <li><a href="#tab-2">坐騎</a></li>
+                                        <li><a href="#tab-2">裝飾</a></li>
+                                        <li><a href="#tab-2">時裝</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_small">
+                                    <ul class="tabs-nav2 nav2">
+                                        <li><a href="#tab-3">傭兵</a></li>
+                                        <li><a href="#tab-3">造型</a></li>
+                                        <li><a href="#tab-3">技能書</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_small">
+                                    <ul class="tabs-nav2 nav2">
+                                        <li><a href="#tab-4">咒文書</a></li>
+                                        <li><a href="#tab-4">卷軸</a></li>
+                                        <li><a href="#tab-4">消耗品</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_small">
+                                    <ul class="tabs-nav2 nav2">
+                                        <li><a href="#tab-5">組合禮包</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_small">
+                                    <ul class="tabs-nav2 nav2">
+                                        <li><a href="#tab-6">專屬會員</a></li>
+                                        <li><a href="#tab-6">限定商品</a></li>
+                                        <li><a href="#tab-6">折扣商品</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </ul>
+                    </div>
+
+                    <ul class="numbers tab-group2">
+                        <li class="tab2 is-active2">1</li>
+                        <li class="tab2">2</li>
+                    </ul>
+                </div>
+                <div class="panel-group2">
+                    <div class="panel2 is-show2">
+                        <div class="p1">
+                            <div class="commodity_box">
+                                <div class="commodity_L">
+                                    <picture>
+                                        <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                        <img class="commodity" src="img/0ac3d253-ef7d-4c02-ae65-f73715008fab.png">
+                                    </picture>
+                                    <div class="commodity_line"></div>
+                                    <div class="commodity_introduction" data-pop="pop3"></div>
+                                    <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                </div>
+                                <div class="commodity_R">
+                                    <div class="price"><span>10,000</span>點</div>
+                                    <div id="field" class="field">
+                                        <button type="button" id="sub" class="sub field-dec">-</button>
+                                        <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                        <button type="button" id="add" class="add field-dec">+</button>
+                                        <p class="numberplus">限購:0/10</p>
+                                    </div>
+                                    <div class="shopping">放入購物車</div>
+                                    <div class="buy" data-pop="pop1">直接購買</div>
+                                </div>
+                            </div>
+                            <div class="commodity_box">
+                                <div class="commodity_L">
+                                    <picture>
+                                        <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                        <img class="commodity" src="img/pic1.png">
+                                    </picture>
+                                    <div class="commodity_introduction" data-pop="pop3">
+                                    </div>
+                                    <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                </div>
+                                <div class="commodity_R">
+                                    <div class="price"><span>10,000</span>點</div>
+                                    <div id="field" class="field">
+                                        <button type="button" id="sub" class="sub field-dec">-</button>
+                                        <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                        <button type="button" id="add" class="add field-dec">+</button>
+                                        <p class="numberplus">限購:0/10</p>
+                                    </div>
+                                    <div class="shopping">放入購物車</div>
+                                    <div class="buy" data-pop="pop1">直接購買</div>
+                                </div>
+                            </div>
+                            <div class="commodity_box">
+                                <div class="commodity_L">
+                                    <picture>
+                                        <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                        <img class="commodity" src="img/pic1.png">
+                                    </picture>
+                                    <div class="commodity_introduction" data-pop="pop3">
+                                    </div>
+                                    <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                </div>
+                                <div class="commodity_R">
+                                    <div class="price"><span>10,000</span>點</div>
+                                    <div id="field" class="field">
+                                        <button type="button" id="sub" class="sub field-dec">-</button>
+                                        <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                        <button type="button" id="add" class="add field-dec">+</button>
+                                        <p class="numberplus">限購:0/10</p>
+                                    </div>
+                                    <div class="shopping">放入購物車</div>
+                                    <div class="buy" data-pop="pop1">直接購買</div>
+                                </div>
+                            </div>
+                            <div class="commodity_box">
+                                <div class="commodity_L">
+                                    <picture>
+                                        <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                        <img class="commodity" src="img/pic1.png">
+                                    </picture>
+                                    <div class="commodity_introduction" data-pop="pop3">
+                                    </div>
+                                    <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                </div>
+                                <div class="commodity_R">
+                                    <div class="price"><span>10,000</span>點</div>
+                                    <div id="field" class="field">
+                                        <button type="button" id="sub" class="sub field-dec">-</button>
+                                        <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                        <button type="button" id="add" class="add field-dec">+</button>
+                                        <p class="numberplus">限購:0/10</p>
+                                    </div>
+                                    <div class="shopping">放入購物車</div>
+                                    <div class="buy" data-pop="pop1">直接購買</div>
+                                </div>
+                            </div>
+                            <div class="commodity_box">
+                                <div class="commodity_L">
+                                    <picture>
+                                        <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                        <img class="commodity" src="img/pic1.png">
+                                    </picture>
+                                    <div class="commodity_introduction" data-pop="pop3">
+                                    </div>
+                                    <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                </div>
+                                <div class="commodity_R">
+                                    <div class="price"><span>10,000</span>點</div>
+                                    <div id="field" class="field">
+                                        <button type="button" id="sub" class="sub field-dec">-</button>
+                                        <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                        <button type="button" id="add" class="add field-dec">+</button>
+                                        <p class="numberplus">限購:0/10</p>
+                                    </div>
+                                    <div class="shopping">放入購物車</div>
+                                    <div class="buy" data-pop="pop1">直接購買</div>
+                                </div>
+                            </div>
+                            <div class="commodity_box">
+                                <div class="commodity_L">
+                                    <picture>
+                                        <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                        <img class="commodity" src="img/pic1.png">
+                                    </picture>
+                                    <div class="commodity_introduction" data-pop="pop3">
+                                    </div>
+                                    <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                </div>
+                                <div class="commodity_R">
+                                    <div class="price"><span>10,000</span>點</div>
+                                    <div id="field" class="field">
+                                        <button type="button" id="sub" class="sub field-dec">-</button>
+                                        <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                        <button type="button" id="add" class="add field-dec">+</button>
+                                        <p class="numberplus">限購:0/10</p>
+                                    </div>
+                                    <div class="shopping">放入購物車</div>
+                                    <div class="buy" data-pop="pop1">直接購買</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel2">
+                        <div class="p1">
+                            <div class="commodity_box">
+                                <div class="commodity_L">
+                                    <picture>
+                                        <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                        <img class="commodity" src="img/0ac3d253-ef7d-4c02-ae65-f73715008fab.png">
+                                    </picture>
+                                    <div class="commodity_line"></div>
+                                    <div class="commodity_introduction" data-pop="pop3"></div>
+                                    <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                </div>
+                                <div class="commodity_R">
+                                    <div class="price"><span>10,000</span>點</div>
+                                    <div id="field" class="field">
+                                        <button type="button" id="sub" class="sub field-dec">-</button>
+                                        <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                        <button type="button" id="add" class="add field-dec">+</button>
+                                        <p class="numberplus">限購:0/10</p>
+                                    </div>
+                                    <div class="shopping">放入購物車</div>
+                                    <div class="buy" data-pop="pop1">直接購買</div>
+                                </div>
+                            </div>
+                            <div class="commodity_box">
+                                <div class="commodity_L">
+                                    <picture>
+                                        <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                        <img class="commodity" src="img/pic1.png">
+                                    </picture>
+                                    <div class="commodity_introduction" data-pop="pop3">
+                                    </div>
+                                    <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                </div>
+                                <div class="commodity_R">
+                                    <div class="price"><span>10,000</span>點</div>
+                                    <div id="field" class="field">
+                                        <button type="button" id="sub" class="sub field-dec">-</button>
+                                        <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                        <button type="button" id="add" class="add field-dec">+</button>
+                                        <p class="numberplus">限購:0/10</p>
+                                    </div>
+                                    <div class="shopping">放入購物車</div>
+                                    <div class="buy" data-pop="pop1">直接購買</div>
+                                </div>
+                            </div>
+                            <div class="commodity_box">
+                                <div class="commodity_L">
+                                    <picture>
+                                        <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                        <img class="commodity" src="img/pic1.png">
+                                    </picture>
+                                    <div class="commodity_introduction" data-pop="pop3">
+                                    </div>
+                                    <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                </div>
+                                <div class="commodity_R">
+                                    <div class="price"><span>10,000</span>點</div>
+                                    <div id="field" class="field">
+                                        <button type="button" id="sub" class="sub field-dec">-</button>
+                                        <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                        <button type="button" id="add" class="add field-dec">+</button>
+                                        <p class="numberplus">限購:0/10</p>
+                                    </div>
+                                    <div class="shopping">放入購物車</div>
+                                    <div class="buy" data-pop="pop1">直接購買</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs-stage">
+                        <div id="tab-1">
+                            <div class="panel2_for_menu2">
+                                <div class="p1">
+                                    <div class="commodity_box">
+                                        <div class="commodity_L">
+                                            <picture>
+                                                <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                                <img class="commodity" src="img/0ac3d253-ef7d-4c02-ae65-f73715008fab.png">
+                                            </picture>
+                                            <div class="commodity_line"></div>
+                                            <div class="commodity_introduction" data-pop="pop3"></div>
+                                            <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                        </div>
+                                        <div class="commodity_R">
+                                            <div class="price"><span>10,000</span>點</div>
+                                            <div id="field" class="field">
+                                                <button type="button" id="sub" class="sub field-dec">-</button>
+                                                <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                                <button type="button" id="add" class="add field-dec">+</button>
+                                                <p class="numberplus">限購:0/10</p>
+                                            </div>
+                                            <div class="shopping">放入購物車</div>
+                                            <div class="buy" data-pop="pop1">直接購買</div>
+                                        </div>
+                                    </div>
+                                    <div class="commodity_box">
+                                        <div class="commodity_L">
+                                            <picture>
+                                                <source srcset="imgp/pic1.webp" type="imgp/webp">
+                                                <img class="commodity" src="img/pic1.png">
+                                            </picture>
+                                            <div class="commodity_introduction" data-pop="pop3">
+                                            </div>
+                                            <div class="title">酷炫車車<br>陳浩南限定款</div>
+                                        </div>
+                                        <div class="commodity_R">
+                                            <div class="price"><span>10,000</span>點</div>
+                                            <div id="field" class="field">
+                                                <button type="button" id="sub" class="sub field-dec">-</button>
+                                                <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                                <button type="button" id="add" class="add field-dec">+</button>
+                                                <p class="numberplus">限購:0/10</p>
+                                            </div>
+                                            <div class="shopping">放入購物車</div>
+                                            <div class="buy" data-pop="pop1">直接購買</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2">
+                            <p>寶箱商品出現處</p>
+                        </div>
+                        <div id="tab-3">
+                            <p>傭兵商品出現處</p>
+                        </div>
+                        <div id="tab-4">
+                            <p>消耗品商品出現處</p>
+                        </div>
+                        <div id="tab-5">
+                            <p>禮包商品出現處</p>
+                        </div>
+                        <div id="tab-6">
+                            <p>優惠商品出現處</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="shopping_bag_all">
+                    <div class="car">購物車</div>
+                    <ul class="numbers2 tab-group3">
+                        <li class="tab3 is-active3">1</li>
+                        <li class="tab3">2</li>
+                        <li class="tab3">3</li>
+                        <li class="tab3">4</li>
+                        <li class="tab3">5</li>
+                    </ul>
+                    <div class="shopping_bag_content panel-group3">
+                        <div class="bag_con_p1 panel3 is-show3">
+                            <table>
+                                <thead>
+                                    <tr class="shopping_TR">
+                                        <th style="width: 10%;">
+                                            <div class="slect_all"><input name="clickAll" id="clickAll" type="checkbox">全選</div>
+                                        </th>
+                                        <th>
+                                            道具名稱
+                                        </th>
+                                        <th style="width: 15%;">
+                                            數量
+                                        </th>
+                                        <th style="width: 15%;">
+                                            點數
+                                        </th>
+                                        <th>
+                                            合計
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="checkboxth"><input name="user_active_col[]" type="checkbox" value="1"></th>
+                                        <th>我是商品名稱的區域</th>
+                                        <th>
+                                            <div id="field" class="field2">
+                                                <button type="button" id="sub" class="sub field-dec">-</button>
+                                                <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                                <button type="button" id="add" class="add field-dec">+</button></th>
+                                        <th>1000</th>
+                                        <th>10000</th>
+                                    </tr>
+                                    <tr>
+                                        <th><input name="user_active_col[]" type="checkbox" value="1"></th>
+                                        <th>我是商品名稱的區域</th>
+                                        <th>
+                                            <div id="field" class="field2">
+                                                <button type="button" id="sub" class="sub field-dec">-</button>
+                                                <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                                <button type="button" id="add" class="add field-dec">+</button></th>
+                                        <th>1000</th>
+                                        <th>10000</th>
+                                    </tr>
+                                    <tr>
+                                        <th><input name="user_active_col[]" type="checkbox" value="1"></th>
+                                        <th>我是商品名稱的區域</th>
+                                        <th>
+                                            <div id="field" class="field2">
+                                                <button type="button" id="sub" class="sub field-dec">-</button>
+                                                <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                                <button type="button" id="add" class="add field-dec">+</button></th>
+                                        <th>1000</th>
+                                        <th>10000</th>
+                                    </tr>
+                                    <tr>
+                                        <th><input name="user_active_col[]" type="checkbox" value="1"></th>
+                                        <th>我是商品名稱的區域</th>
+                                        <th>
+                                            <div id="field" class="field2">
+                                                <button type="button" id="sub" class="sub field-dec">-</button>
+                                                <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                                <button type="button" id="add" class="add field-dec">+</button></th>
+                                        <th>1000</th>
+                                        <th>10000</th>
+                                    </tr>
+                                    <tr>
+                                        <th><input name="user_active_col[]" type="checkbox" value="1"></th>
+                                        <th>我是商品名稱的區域</th>
+                                        <th>
+                                            <div id="field" class="field2">
+                                                <button type="button" id="sub" class="sub field-dec">-</button>
+                                                <input type="number" id="1" value="1" class="field-num" min="1" max="10" oninput="if(value>10)value=10;if(value.length>2)value=value.slice(0,2);if(value<0)value=0" />
+                                                <button type="button" id="add" class="add field-dec">+</button></th>
+                                        <th>1000</th>
+                                        <th>10000</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            </div>
+                            <div class="under">
+                                <div class="under_box">
+                                    <div class="delete">刪除選擇</div>
+                                    <div class="price_buy">
+                                        <p>總計:50000</p>
+                                        <div class="P2_buy">購買</div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="panel">
+                                <div class="history">
+                                    <div class="car">購買紀錄</div>
+                                    <ul class="numbers3 tab-group4">
+                                        <li class="tab4 is-active4">1</li>
+                                        <li class="tab4">2</li>
+                                        <li class="tab4">3</li>
+                                        <li class="tab4">4</li>
+                                        <li class="tab4">5</li>
+                                    </ul>
+                                    <div class="history_content panel-group3">
+                                        <div class="bag_con_p1 panel4 is-show4">
+                                            <table>
+                                                <thead>
+                                                    <tr class="shopping_TR">
+                                                        <th>
+                                                            購買時間
+                                                        </th>
+                                                        <th>
+                                                            道具名稱
+                                                        </th>
+                                                        <th style="width: 15%;">
+                                                            數量
+                                                        </th>
+                                                        <th style="width: 15%;">
+                                                            合計
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>110/02/23 17:16:51</th>
+                                                        <th>我是商品名稱的區域</th>
+                                                        <th>5</th>
+                                                        <th>10000</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>110/02/23 17:16:51</th>
+                                                        <th>我是商品名稱的區域</th>
+                                                        <th>5</th>
+                                                        <th>10000</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>110/02/23 17:16:51</th>
+                                                        <th>我是商品名稱的區域</th>
+                                                        <th>5</th>
+                                                        <th>10000</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>110/02/23 17:16:51</th>
+                                                        <th>我是商品名稱的區域</th>
+                                                        <th>5</th>
+                                                        <th>10000</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>110/02/23 17:16:51</th>
+                                                        <th>我是商品名稱的區域</th>
+                                                        <th>5</th>
+                                                        <th>10000</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>110/02/23 17:16:51</th>
+                                                        <th>我是商品名稱的區域</th>
+                                                        <th>5</th>
+                                                        <th>10000</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>110/02/23 17:16:51</th>
+                                                        <th>我是商品名稱的區域</th>
+                                                        <th>5</th>
+                                                        <th>10000</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>110/02/23 17:16:51</th>
+                                                        <th>我是商品名稱的區域</th>
+                                                        <th>5</th>
+                                                        <th>10000</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="usingbook">
+                                    <div class="car">使用說明</div>
+                                    <div class="p4_content">
+                                        <ol>
+                                            <li>商品購買完成後，系統將在30分鐘內發放至帳號內的禮物盒中。</li>
+                                            <li>部分商品有消耗或時效性設定，實際效果或限制依遊戲設定為主。</li>
+                                            <li>部分商品有購買、送禮等條件限制，消費前請詳閱商品說明。</li>
+                                            <li>部分商品為機會中獎商品，消費者購買或參與活動不代表即可獲得特定商品。</li>
+                                            <li>購買前請務必確認消費帳號內已有角色，若因未創建角色致該帳號無法正常取得商品，不予以補還點數或商品或其他等值商品。</li>
+                                            <li>發現活動或領獎機制發生系統或其他異常，請於第一時間透過「<a href="#"> 掘夢網線上客服中心 </a>」進行回報，若逕行利用該異常取得非屬原活動機制應得之獎勵者，本公司有權終止其進行遊戲。</li>
+                                            <li>領取虛寶商品前，請確認禮物箱、背包是否有足夠空間；如因、禮物箱、背包空間不足發生無法領取，或導致物品消失之情況，則不另作補償。</li>
+                                            <li>玩家使用《王者世界網頁商城》之同時，即同意接受本商城之活動辦法與注意事項之規範，如不同意或有違反，應視為無參加資格，或本公司得取消其使用資格，如因此有致生損害於本公司或其他任何第三人，本公司得向參加者請求損害賠償，參加者應負一切相關責任。</li>
+                                            <li>掘夢網保留變更、取消或終止本活動的權利，包括但不限於本活動條款及活動辦法。</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            </div>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                            <script src="js/numbers.js"></script>
+                            <script src="js/tab.js"></script>
+                            <script src="js/click_all.js"></script>
+                            <script type="text/javascript" src="js/slick.min.js"></script>
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                    $('.single-item').slick({
+                                        dots: true,
+                                        infinite: true,
+                                        speed: 500,
+                                    });
+                                });
+                            </script>
+                            <script src="js/popup.js"></script>
+</body>
+
+</html>
